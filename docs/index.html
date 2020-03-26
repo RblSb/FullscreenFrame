@@ -51,7 +51,7 @@
         document.webkitCancelFullScreen();
       }
     }
-</script>
+  </script>
 </head>
 <body>
   <iframe id="target" class="fullscreen" allowfullscreen></iframe>
@@ -61,7 +61,7 @@
     var qs = decodeURIComponent(url.substring(url.indexOf('#') + 1));
     var frame_location;
     if (qs != url) {
-      frame_location = (!qs.startsWith("http"))? "//".concat(qs): qs;
+      frame_location = (!qs.startsWith("http")) ? "//".concat(qs) : qs;
     }
     var frame = document.getElementById("target");
     frame.src = frame_location;
